@@ -1,0 +1,20 @@
+user1:
+  id: 12
+  name: 张三
+test:
+  id: 12
+  a: 12
+spring:
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssmdatabase?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL&allowPublicKeyRetrieval=true&allowMultiQueries=true
+    hikari:
+      password: 123456
+      username: root
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
